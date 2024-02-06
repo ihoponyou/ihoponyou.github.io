@@ -1,4 +1,42 @@
-.fullscreen {
-    width: 100%;
-    min-height: 100%;
+
+html {
+    overscroll-behavior: none;
+    height: 100%;
+}
+
+.white-text {
+    font-family: "Inter";
+    color: lightgray;
+    text-shadow: -0.5px 0.5px 4px #282828,
+        -1px 1px 0px #282828,
+        -1.5px 1.5px 0px #282828,
+        -2px 2px 0px #282828;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.bkg-video {
+    top: 5em;
+    max-width: 100%;
+    position: absolute;
+    background-position: center;
+    z-index: -1;
+}
+
+body {
+    /* background: linear-gradient(#404040 0 10em, #878787 10em 100%); */
+    /* background-repeat: no-repeat; */
+    background-color: #404040;
+    /* height: 100%; */
+}
+
+header {
+    margin-bottom: 5em;
 }

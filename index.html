@@ -1,58 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Home | Noah Magcalas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="icon" type="image/x-icon" href="media/images/logo.gif">
+
+  <title>Noah Magcalas | Home</title>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">N.M.</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
 
-    <video autoplay muted loop class="fullscreen">
-      <source src="media/video/very_good.mp4" type="video/mp4">
-    </video>
+<body class="d-flex flex-column h-100 white-text">
 
-    <footer>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="media/images/logo.gif"></img></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- background video -->
+  <video autoplay muted loop class="bkg-video">
+    <source src="media/video/very_4k_50.mp4" type="video/mp4">
+  </video>
+
+  <main class="flex-shrink-0">
+
+    <div class="container">
+      <div id="" class="row mb-3">
+        <div class="col-md-6">
+          <h1>about me</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
+            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
+            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+        </div>
+      </div>
+
+      <div id="websites" class="row mb-3">
+        <div class="col-md-6">
+          <h1>cool websites</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
+            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
+            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+        </div>
+      </div>
+
+      <div id="stories" class="row mb-3">
+        <div class="col-md-6">
+          <h1>cool stories</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
+            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
+            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+        </div>
+      </div>
+
+      <div id="projects" class="row mb-3">
+        <div class="col-md-6">
+          <h1>hobbies/projects</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
+            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
+            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+        </div>
+      </div>
+
+      <div id="schedule" class="row">
+        <div class="col-md-6">
+          <h1>my schedule</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
+            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
+            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <div class="row">
+        contact icons
+      </div>
+      <div class="row">
+        © Noah Magcalas 2024. No Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
