@@ -8,6 +8,9 @@
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -16,20 +19,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
 
   <link rel="icon" type="image/x-icon" href="media/images/logo.gif">
 
-  <title>Noah Magcalas | Home</title>
+  <title>NM | Assignment 2</title>
 </head>
 
-<body class="d-flex flex-column h-100 white-text">
+<body class="white-text">
 
   <header>
+
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="media/images/logo.gif"></img></a>
+        <a class="navbar-brand" href="#">
+          <img src="media/images/logo.gif">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,73 +45,125 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#about">about me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#websites">cool websites</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#stories">cool stories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#hobbies">hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">schedule</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
   </header>
 
   <!-- background video -->
   <video autoplay muted loop class="bkg-video">
-    <source src="media/video/very_4k_50.mp4" type="video/mp4">
+    <source src="media/video/vg_50.mp4" type="video/mp4">
   </video>
 
-  <main class="flex-shrink-0">
+  <main>
 
     <div class="container">
-      <div id="" class="row mb-3">
+
+      <div id="about" class="row mb-3">
         <div class="col-md-6">
           <h1>about me</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
-            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
-            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+          <p>
+            hey there! my name is noah, and this is my website. why do i type in all lowercase? i'm not sure, but i
+            think it looks just fine.
+            anyway, i'm a sophomore computer science major. i originally planned on studying mechanical engineering, but
+            i found out during my senior year of high school that i wasn't really sure why.
+            long story short: i found out that i like to code--and i'm pretty good at it too.
+            <br><br>
+            as far as career aspirations, i want to make games. coding, modeling, animating, all of it (except maybe
+            music). if i can't make that happen, then i'll find something that isn't too soul-draining.
+            in that case, i'll probably make games on the side anyway.
+          </p>
         </div>
       </div>
 
       <div id="websites" class="row mb-3">
+        <!-- <div class="col-md-6"></div> -->
         <div class="col-md-6">
           <h1>cool websites</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
-            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
-            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+          <ul>
+            <li><a href="https://monkeytype.com/">monkeytype</a>: a really nice-looking, super-customizable typing test
+            </li>
+            <li><a href="http://toastytech.com/">toasty tech</a>: believe it or not, a website from <em>1998</em> (check
+              out the section <a href="http://toastytech.com/evil/index.html">about IE</a>).</li>
+            <li><a href="https://www.develop.games/">develop.games</a>: a massive collection of advice on entering the
+              game development scene</li>
+          </ul>
         </div>
       </div>
 
       <div id="stories" class="row mb-3">
         <div class="col-md-6">
           <h1>cool stories</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
-            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
-            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+          <ul>
+            <li><i>real</i> by takehiko inoue | two words: wheelchair basketball</li>
+            <li><i>interstellar</i> (2014 movie) | peak sci-fi</li>
+            <li><i>berserk</i> by kentauro miura (r.i.p.) | guy kills demons with a big sword</li>
+          </ul>
         </div>
       </div>
 
-      <div id="projects" class="row mb-3">
+      <div id="hobbies" class="row mb-3">
+        <!-- <div class="col-md-6"></div> -->
         <div class="col-md-6">
-          <h1>hobbies/projects</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
-            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
-            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+          <h1>my hobbies</h1>
+          <ol>
+            <li>game development</li>
+            <li>3D modeling/animation</li>
+            <li>game playing</li>
+          </ol>
         </div>
       </div>
 
       <div id="schedule" class="row">
         <div class="col-md-6">
-          <h1>my schedule</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae magni eos recusandae tempora
-            minus cum dolor consequuntur? Voluptates, porro aperiam delectus, laudantium possimus sapiente quaerat
-            adipisci perferendis non, rem dolorum id aliquam ipsum beatae quis dolores eos. Officia, nostrum.</p>
+          <h1>weekly schedule</h1>
+          <table class="table schedule">
+            <thead>
+              <th>mon</th>
+              <th>tue</th>
+              <th>wed</th>
+              <th>thu</th>
+              <th>fri</th>
+            </thead>
+            <tr>
+              <td class="schedule-item">CSCI 313<br>11:00AM - 11:50AM</td>
+              <td></td>
+              <td>CSCI 313<br>11:00AM - 11:50AM</td>
+              <td></td>
+              <td>CSCI 313<br>11:00AM - 11:50AM</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CSCI 336<br>12:30PM - 1:45PM</td>
+              <td></td>
+              <td>CSCI 336<br>12:30PM - 1:45PM</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CSCI 467<br>3:30PM - 4:45PM</td>
+              <td></td>
+              <td>CSCI 467<br>3:30PM - 4:45PM</td>
+              <td></td>
+            </tr>
+          </table>
+          <span id="subtext">(also taking CSCI 404 & 426 online)</span>
         </div>
       </div>
 
@@ -111,12 +171,25 @@
 
   </main>
 
-  <footer class="footer mt-auto py-3">
-    <div class="container">
-      <div class="row">
-        contact icons
+  <footer class="footer py-3">
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-row justify-content-center mb-2">
+        <div class="flex-item px-3">
+          <i class="bi bi-discord" title="@ihoyou"></i>
+        </div>
+        <div class="flex-item px-3">
+          <a href="https://github.com/ihoponyou">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+        <div class="flex-item px-3">
+          <i class="bi bi-envelope-fill" title="noah.magcalas@gmail.com"></i>
+        </div>
       </div>
-      <div class="row">
+      <div class="d-flex flex-row justify-content-center mb-2">
+        models & animations by me
+      </div>
+      <div class="d-flex flex-row justify-content-center">
         © Noah Magcalas 2024. No Rights Reserved.
       </div>
     </div>
