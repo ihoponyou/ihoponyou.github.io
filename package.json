@@ -1,5 +1,5 @@
 {
-  "name": "real-react-app",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +40,5 @@
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
-  "homepage": "https://ihoponyou.github.io/real-react-app"
+  "homepage": "https://ihoponyou.github.io/portfolio"
 }
