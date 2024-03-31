@@ -1,10 +1,6 @@
 
 import { Link } from "react-router-dom";
 
-function importAll(context) {
-  return context.keys().map(context)
-}
-
 function Home() {
   return (
     <>
