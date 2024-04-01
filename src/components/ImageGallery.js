@@ -13,15 +13,15 @@ function ImageGallery({ image_paths }) {
     }
 
     return (
-        <div>
+        <div className="text-center">
             <img height={300} src={image_paths[index]} alt="" />
             <br />
             <div className="text-center">
-                <button className="btn btn-secondary mx-3" onClick={decrementIndex}>
+                <button className="btn mx-3" onClick={decrementIndex}>
                     <i className="bi bi-arrow-left"></i>
                 </button>
                 {index + 1}/{image_paths.length}
-                <button className="btn btn-secondary mx-3" onClick={incrementIndex}>
+                <button className="btn mx-3" onClick={incrementIndex}>
                     <i className="bi bi-arrow-right"></i>
                 </button>
             </div>

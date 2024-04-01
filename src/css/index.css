@@ -64,3 +64,14 @@ h1 {
 .nav-item > a:hover {
     color: white;
 }
+
+.card {
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+    border-width: 0;
+}
+
+.card * {
+    border-radius: 0;
+}
