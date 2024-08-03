@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { importAll } from "./App";
 
 function GridCard({ title, text, project_title, children }) {
-  const thumbnail = importAll(require.context(`../media/pictures`, false, /\.(png|jpe?g|svg)$/));
+  const thumbnail = importAll(require.context(`../assets/pictures`, false, /\.(png|jpe?g|svg)$/));
 
   return (
     <div className="col">
