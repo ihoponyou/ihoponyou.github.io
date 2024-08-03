@@ -10,7 +10,7 @@ export function importAll(context) {
 }
 
 function App() {
-  const picturePaths = importAll(require.context(`../media/pictures`, false, /\.(png|jpe?g|svg)$/));
+  const picturePaths = importAll(require.context(`../assets/pictures`, false, /\.(png|jpe?g|svg)$/));
   // console.log(require.context(`../media/pictures`, false, /\.(png|jpe?g|svg)$/));
   // console.log(require.context(`../media/pictures`, false, /\.(png|jpe?g|svg)$/).keys());
   // console.log(picturePaths);
