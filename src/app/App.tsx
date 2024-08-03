@@ -1,9 +1,9 @@
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Home from "../components/Home";
+import ImageGallery from "../components/ImageGallery";
+import Layout from "../components/Layout";
+import Section from "../components/Section";
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Layout from './Layout';
-import Home from './Home';
-import Section from './Section';
-import ImageGallery from './ImageGallery';
 
 export function importAll(context) {
   return context.keys().map(context)
