@@ -1,8 +1,10 @@
 
 import { Link } from "react-router-dom";
-import { importAll } from "./App";
+import { importAll } from "../app/App";
 
-function GridCard({ title, text, project_title, children }) {
+interface GridCardProps { title: string, text?: string, project_title: string }
+
+function GridCard(props: GridCardProps) {
   const thumbnail = importAll(require.context(`../assets/pictures`, false, /\.(png|jpe?g|svg)$/));
 
   return (
@@ -12,7 +14,7 @@ function GridCard({ title, text, project_title, children }) {
           <img src={thumbnail[0]} className="card-img-top" alt="project thumbnail" />
         </Link>
         <div className="card-body">
-          <h5 className="card-title">{title}</h5>
+          <h5 className="card-title">{props.title}</h5>
         </div>
       </div>
     </div>
