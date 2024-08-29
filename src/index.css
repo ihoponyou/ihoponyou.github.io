@@ -6,7 +6,7 @@ html {
     overscroll-behavior: none;
 }
 
-body {
+body, .bi {
     background-color: #404040;
 
     font-family: "Inter";
@@ -45,12 +45,12 @@ a:hover {
     z-index: -1;
 }
 
-h1 {
-    color: white;
+p > img {
+    filter: drop-shadow(-2px 2px 0px #282828)
 }
 
-.bi-github {
-    color: lightgray;
+h1 {
+    color: white;
 }
 
 .main-image {
