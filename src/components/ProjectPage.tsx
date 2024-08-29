@@ -10,7 +10,7 @@ interface Props {
     imagePaths: string[],
 }
 
-function Project(props: Props) {
+function ProjectPage(props: Props) {
     return (
         <Section title={props.title}>
             <div className="row">
@@ -24,7 +24,9 @@ function Project(props: Props) {
                         {props.data.description}
                     </Markdown>
                     <ul>
-                        {props.data.tags.map((tagName) => <li key={tagName}>{tagName}</li>)}
+                        {props.data.tags.map(
+                            (tagName) => <li key={tagName}>{tagName}</li>
+                        )}
                     </ul>
                 </div>
             </div>
@@ -33,4 +35,4 @@ function Project(props: Props) {
     )
 }
 
-export default Project;
+export default ProjectPage;

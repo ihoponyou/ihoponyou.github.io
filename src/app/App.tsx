@@ -1,23 +1,31 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../components/Home";
 import Layout from "../components/Layout";
-import Project from "../components/Project";
+import ProjectPage from "../components/ProjectPage";
 import PROJECTS from "../projects";
 
 export const IMAGES = require.context("../assets/pictures", true);
 
+// console.log(IMAGES.keys()); // location in project
+// console.log(IMAGES.keys().map((value) => IMAGES(value))); // actual location when served
+// console.log(IMAGES.keys().filter((path) => path.includes("roblox")))
+
 function App() {
   const projectRoutes: React.ReactElement[] = [];
-  for (const [title, data] of PROJECTS) {
+  for (const [title, data] of Object.entries(PROJECTS)) {
     const newProjectRoute =
       <Route
         key={title}
         path={`/${title.trim().replaceAll(/\s+/g, "-")}`}
         element={
-          <Project
+          <ProjectPage
             title={title}
             data={data}
-            imagePaths={IMAGES.keys().map((value) => IMAGES(value))}
+            imagePaths={
+              IMAGES.keys()
+                .filter((path) => path.includes(title.trim().replaceAll(/\s+/g, "-")))
+                .map((value) => IMAGES(value) as string)
+            }
           />
         }
       />
