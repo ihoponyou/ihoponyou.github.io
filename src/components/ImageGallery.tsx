@@ -19,15 +19,16 @@ function ImageGallery({ images }: Props) {
     <div className="text-center">
       <img src={images[index]} alt="" />
       <br />
-      <div className="text-center">
-        <button className="btn mx-3" onClick={decrementIndex}>
-          <i className="bi bi-arrow-left"></i>
-        </button>
-        {index + 1}/{images.length}
-        <button className="btn mx-3" onClick={incrementIndex}>
-          <i className="bi bi-arrow-right"></i>
-        </button>
-      </div>
+      {images.length > 1 &&
+        <>
+          <button className="mx-3" onClick={decrementIndex}>
+            ←
+          </button>
+          {index + 1}/{images.length}
+          <button className="mx-3" onClick={incrementIndex}>
+            →
+          </button>
+        </>}
     </div>
   );
 }
