@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename="portfolio">
+    <BrowserRouter basename="">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
