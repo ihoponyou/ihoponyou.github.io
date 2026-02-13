@@ -1,35 +1,19 @@
 ---
+layout: default
+title: Home
 ---
 
-<!DOCTYPE html>
-<html>
-<head>
-<title>something</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-
-<span class="title">title</span>
+<span class="title">{{ page.title }}</span>
 
 <h1>words</h1>
 <p>blah blah blah</p>
 <div class="sidenote">this is a cool bug fact</div>
 
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+  {% for link in site.data.links %}
+  <li>
+    {{ link.name }}: {{ link.url }}
+  </li>
   {% endfor %}
 </ul>
 
-<ul>
-	{% for link in site.data.links %}
-		<li>
-			{{ link.name }}: {{ link.url }}
-		</li>
-	{% endfor %}
-</ul>
-
-</body>
-</html> 

@@ -1,0 +1,7 @@
+<nav>
+  {% for link in site.data.internal_links %}
+  <a href="{{ link.url }}" {% if page.url==link.url %}class="current-section" {% endif %}>
+    {{ link.name }}
+  </a>
+  {% endfor %}
+</nav>

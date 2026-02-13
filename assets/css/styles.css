@@ -18,3 +18,7 @@ body {
 .sidenote {
 	float: right;
 }
+
+.current-section {
+	font-weight: bold;
+}
