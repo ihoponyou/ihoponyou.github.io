@@ -1,6 +1,8 @@
 
 html {
 	/* background: #282828; */
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 * {
@@ -34,7 +36,6 @@ a:hover {
 
 body {
 	margin: 5%;
-	margin
 }
 
 ul {
