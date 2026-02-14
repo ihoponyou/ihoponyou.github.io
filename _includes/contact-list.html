@@ -1,0 +1,10 @@
+<h1></h1>
+<div class="contacts">
+  {% for contact in site.data.contacts %}
+  <a href="{{ contact.url }}" class="contact">
+    <span class="contact contact-title">{{ contact.title }}:</span>
+    <span class="contact contact-info">{{ contact.info }}</span>
+  </a>
+  {% endfor %}
+</div>
+

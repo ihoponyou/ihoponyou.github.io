@@ -3,17 +3,18 @@ layout: default
 title: Home
 ---
 
-<span class="title">{{ page.title }}</span>
+<h1>YO!</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae diam nec lacus ultrices porttitor. Aenean neque sapien, aliquam quis feugiat id, volutpat at tellus. Duis vitae elit vestibulum, egestas odio viverra, mollis mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec facilisis sodales suscipit. Donec ullamcorper lectus volutpat, condimentum orci sit amet, ornare lectus. Fusce at justo vel nisi gravida sollicitudin eget eget metus. Aliquam rutrum vitae risus molestie pulvinar. Nullam varius facilisis luctus. Maecenas sit amet imperdiet metus. Nam nisl neque, faucibus quis enim sit amet, sagittis tempor diam. Nam elementum ante maximus, rhoncus urna nec, lacinia neque.
+</p>
+<div class="sidenote">
+  <img src="/assets/images/exblackwater_-_1627372375158456320.gif" alt="fancam edit of a CS:S terrorist smoking a cigarette">
+  <p>this is a cool bug fact about counter strike source</p>
+</div>
+<p>
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sed lacus nunc. Aliquam erat volutpat. Suspendisse nulla neque, volutpat vitae tristique ut, posuere vitae nisl. Sed in lectus tortor. Sed eros nibh, accumsan sed aliquam ut, gravida et elit. Curabitur tristique lectus sit amet diam volutpat placerat. Sed dapibus est lobortis ante interdum efficitur in vel orci. Curabitur congue commodo ante a sagittis. Aliquam quis volutpat magna, et ullamcorper massa. Curabitur cursus viverra arcu, convallis eleifend erat blandit in. Donec id risus erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
-<h1>words</h1>
-<p>blah blah blah</p>
-<div class="sidenote">this is a cool bug fact</div>
+Nullam augue sem, fringilla eget sapien vel, tempus finibus ligula. Suspendisse euismod rutrum dolor nec scelerisque. Duis at facilisis urna. Aliquam tempus ex vitae eros ullamcorper condimentum. Quisque egestas aliquet arcu et cursus. Phasellus pellentesque lectus quis ullamcorper dapibus. Sed vitae elit ac neque volutpat dignissim. Nulla eu quam ac eros convallis suscipit eu id erat. Ut at eros quis ligula congue accumsan ut in orci. Praesent egestas augue vitae nibh dapibus suscipit. 
+</p>
 
-<ul>
-  {% for link in site.data.links %}
-  <li>
-    {{ link.name }}: {{ link.url }}
-  </li>
-  {% endfor %}
-</ul>
-
+{% include contact-list.html %}
