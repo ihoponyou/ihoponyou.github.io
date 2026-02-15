@@ -1,7 +1,8 @@
+@import "gruvbox-dark.css";
 
 html {
 	/* background: #282828; */
-	max-width: 900px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 
@@ -19,6 +20,10 @@ h1 {
 	font-size: 1.5rem;
 }
 
+h2 {
+	border-bottom: 1px #0008 solid;
+}
+
 nav {
 	text-align: center;
 }
@@ -34,10 +39,6 @@ a:hover {
 	color: cornflowerblue;
 }
 
-body {
-	margin: 5%;
-}
-
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -45,6 +46,11 @@ ul {
 
 img {
 	max-width: 100%;
+}
+
+pre {
+	border: 1px #000 solid;
+	padding: 8px;
 }
 
 .title {
