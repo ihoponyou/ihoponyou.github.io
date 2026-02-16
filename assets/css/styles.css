@@ -20,6 +20,10 @@ h1 {
 	font-size: 1.5rem;
 }
 
+h1 * {
+	font-size: 1em;
+}
+
 h2 {
 	border-bottom: 1px #0008 solid;
 }
