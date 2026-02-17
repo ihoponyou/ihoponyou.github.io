@@ -1,4 +1,9 @@
 @import "gruvbox-dark.css";
+/* theme overrides/extensions */
+.highlight {
+	border-radius: 2px;
+}
+/* end overrides */
 
 html {
 	/* background: #282828; */
@@ -11,21 +16,26 @@ html {
 	font-size: 18px;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	text-transform: uppercase;
+	* {
+		font-size: 1em;
+	}
 }
 
 h1 {
-	border-bottom: 1px #000 solid;
 	font-size: 1.5rem;
-}
-
-h1 * {
-	font-size: 1em;
+	border-bottom: 1px #000 dotted;
 }
 
 h2 {
-	border-bottom: 1px #0008 solid;
+	font-size: 1.3rem;
+	border-bottom: 1px #0006 dotted;
+}
+
+h3 {
+	font-size: 1.1rem;
+	text-decoration: underline 1px dotted;
 }
 
 nav {
@@ -44,8 +54,8 @@ a:hover {
 }
 
 ul {
-	list-style-type: none;
-	padding: 0;
+	list-style-type: square;
+	padding-left: 1rem;
 }
 
 img {
@@ -53,7 +63,6 @@ img {
 }
 
 pre {
-	border: 1px #000 solid;
 	padding: 8px;
 }
 
@@ -108,7 +117,17 @@ pre {
 	font-weight: bold;
 }
 
+.post-list {
+	list-style-type: none;
+	padding: 0;
+}
 .posts {
 	display: flex;
 	justify-content: center;
+}
+
+.underheading {
+	margin-top: -0.6rem;
+	/* font-size: 0.8rem; */
+	font-style: italic;
 }

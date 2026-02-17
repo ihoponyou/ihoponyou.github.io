@@ -4,10 +4,12 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-<p style="margin-top: -0.5rem;">{{ page.date | date: "%B %d %Y " }}</p>
+<p class="underheading">{{ page.date | date: "%B %d %Y " }}</p>
 
 {{ content }}
 
 <h1>other posts</h1>
 
 {% include post-list.html %}
+
+<a style="display: block; text-align: center;" href="#">back to top</a>

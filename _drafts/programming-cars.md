@@ -12,12 +12,15 @@ title: programming cars
 
 # AESTROM's ["TORSION Vehicle Physics Series"](https://www.youtube.com/playlist?list=PL2uvZKBCoAYnfkfYm47nP5S6UeBPJPbEF)
 
+<p class="underheading">Uploaded on YouTube throughout 2025</p>
+
 ## steering
 
 - use ackermann steering geometry to ensure vehicle drives in a circle
 - use pacejka for slip ratio & angle
 
 # Matthew Harris's ["Vehicle Feel Masterclass"](https://www.youtube.com/watch?v=n_A0RqeGado)
+<p class="underheading">Presented at GDC 2018</p>
 
 ## power train feedback loop
 
@@ -52,6 +55,7 @@ title: programming cars
 - shake around the camera on high impact
 
 # Marco Monster's ["Car Physics for Games"](https://www.asawicki.info/Mirror/Car%20Physics%20for%20Games/Car%20Physics%20for%20Games.html)
+<p class="underheading">Published in 2003</p>
 
 ## driving in a straight line
 
@@ -97,6 +101,7 @@ def main:
 {% endhighlight %}
 
 # Prototype Everything's ["Slip, Grip & Friction Circle Explained"](https://youtu.be/kmL7DnxeUTE?si=-kMG1M9f1Vso6siX)
+<p class="underheading">Uploaded on Youtube in 2026</p>
 
 ## suspension
 
@@ -113,6 +118,8 @@ velocity!
 - apply forces at the contact point
 
 # Wassimulator's ["Programming Vehicles in Games"](https://wassimulator.com/blog/programming/programming_vehicles_in_games.html#sr)
+{% include underheading.html text="Presented at the Better Software
+Conference in 2025" %}
 
 ## slip ratio
 
