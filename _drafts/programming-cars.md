@@ -3,6 +3,13 @@ layout: post
 title: programming cars
 ---
 
+# Ryan Juckett's ["Damped Springs"](https://www.ryanjuckett.com/damped-springs/)
+
+- use separate springs for camera distance vs rotation
+- also euler integration is bad for spring stuff (velocity += accel, pos += velocity, etc.)
+
+*should have taken diff. eq smh*
+
 # AESTROM's ["TORSION Vehicle Physics Series"](https://www.youtube.com/playlist?list=PL2uvZKBCoAYnfkfYm47nP5S6UeBPJPbEF)
 
 ## steering
