@@ -1,4 +1,4 @@
-@import "gruvbox-dark.css";
+@import "/assets/css/gruvbox-dark.css";
 /* theme overrides/extensions */
 .highlight {
 	border-radius: 2px;

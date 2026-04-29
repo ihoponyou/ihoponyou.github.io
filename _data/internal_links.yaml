@@ -4,3 +4,5 @@
   url: /about.html
 - name: posts
   url: /posts.html
+- name: portfolio
+  url: /portfolio.html
